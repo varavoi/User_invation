@@ -6,6 +6,7 @@ import { Users } from './Components/Users/Users';
 
 function App() {
   const [users, setUsers] = React.useState([])
+  const [isLoading, setLoading] = React.useState(true)
 React.useEffect(()=>{
   fetch('https://reqres.in/api/users').then(res=>res.json()).then(json=>{
     setUsers(json.data)
