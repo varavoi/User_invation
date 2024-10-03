@@ -32,6 +32,9 @@ const onClickInvite = (id)=>{
     setInvites(prev=>[...prev,id])
   }
 }
+ const onClickSendInvites = ()=>{
+    setSuccess(true)
+ }
   return (
     <div className="App">
       {success?<Success/>:
