@@ -45,6 +45,7 @@ const onClickInvite = (id)=>{
         isLoading={isLoading}
         invites={invites}
         onClickInvite={onClickInvite}
+        onClickSendInvites= {onClickSendInvites}
         />
       }
       {/* <Success/> */}
