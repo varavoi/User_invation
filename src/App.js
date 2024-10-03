@@ -18,9 +18,16 @@ React.useEffect(()=>{
   }).finally(()=>setLoading(false))
 },[])
 
+const onChangeSearchValue = (event)=>{
+    setSearchValue(event.target.value)
+}
   return (
     <div className="App">
-      <Users searchValue={searchValue} items={users} isLoading={isLoading}/>
+      <Users 
+        searchValue={searchValue}  
+        onChangeSearchValue={onChangeSearchValue}
+        items={users} 
+        isLoading={isLoading}/>
       {/* <Success/> */}
     </div>
   );
