@@ -42,13 +42,17 @@
 ```
 ├── src
    │   ├── App.js
-   │   ├── components
-   │   │   ├── UserList.js
-   │   │   ├── UserCard.js
-   │   │   └── Confirmation.js
+   │   ├── Components
+   │   │   ├── Users
+   │   │   │ ├── Skeleton.jsx
+   │   │   │ ├── User.jsx
+   │   │   │ └── Users.jsx
+   │   │   └── Success.jsx
    │   └── App.css
+   │    
    └── public
        └── index.html
+       └── index.js
 ```
 
 ### Дополнительная информация
