@@ -37,7 +37,11 @@ const onClickInvite = (id)=>{
         searchValue={searchValue}  
         onChangeSearchValue={onChangeSearchValue}
         items={users} 
-        isLoading={isLoading}/>
+        isLoading={isLoading}
+        invites={invites}
+        onClickInvite={onClickInvite}
+        />
+        
       {/* <Success/> */}
     </div>
   );
