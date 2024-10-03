@@ -15,3 +15,4 @@ export const Skeleton = () => (
     <rect x="290" y="12" rx="6" ry="6" width="26" height="26" />
   </ContentLoader>
 );
+// export default Skeleton;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Success = ({ count }) => {
+ const Success = ({ count }) => {
   return (
     <div class="success-block">
       <img src="/assets/success.svg" alt="Success" />
@@ -10,3 +10,4 @@ export const Success = ({ count }) => {
     </div>
   );
 };
+export default Success;
