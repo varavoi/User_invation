@@ -5,9 +5,18 @@ import { Success } from './Components/Success';
 import { Users } from './Components/Users/Users';
 
 function App() {
+  const [users, setUsers] = React.useState([])
+React.useEffect(()=>{
+  fetch('https://reqres.in/api/users').then(res=>res.json()).then(json=>{
+    setUsers(json.data)
+  }).catch(err=>{
+    console.warn(err)
+    alert('Ошибка при получении пользователей')
+  })
+},[])
+
   return (
     <div className="App">
-      const [users, setUsers] = React.useState([])
       <Users />
       {/* <Success/> */}
     </div>
