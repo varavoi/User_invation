@@ -13,12 +13,12 @@ React.useEffect(()=>{
   }).catch(err=>{
     console.warn(err)
     alert('Ошибка при получении пользователей')
-  })
+  }).finally(()=>setLoading(false))
 },[])
 
   return (
     <div className="App">
-      <Users items={users}/>
+      <Users items={users} isLoading={isLoading}/>
       {/* <Success/> */}
     </div>
   );
