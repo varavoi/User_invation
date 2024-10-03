@@ -20,7 +20,7 @@ React.useEffect(()=>{
 
   return (
     <div className="App">
-      <Users items={users} isLoading={isLoading}/>
+      <Users searchValue={searchValue} items={users} isLoading={isLoading}/>
       {/* <Success/> */}
     </div>
   );
