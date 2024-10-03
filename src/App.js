@@ -4,9 +4,11 @@ import './App.css';
 import { Success } from './Components/Success';
 import { Users } from './Components/Users/Users';
 
+
 function App() {
   const [users, setUsers] = React.useState([])
   const [isLoading, setLoading] = React.useState(true)
+  const [searchValue, setSearchValue] = React.useState('')
 React.useEffect(()=>{
   fetch('https://reqres.in/api/users').then(res=>res.json()).then(json=>{
     setUsers(json.data)
