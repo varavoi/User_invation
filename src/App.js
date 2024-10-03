@@ -34,6 +34,7 @@ const onClickInvite = (id)=>{
 }
   return (
     <div className="App">
+      {success?<Success/>:
       <Users 
         searchValue={searchValue}  
         onChangeSearchValue={onChangeSearchValue}
@@ -42,7 +43,7 @@ const onClickInvite = (id)=>{
         invites={invites}
         onClickInvite={onClickInvite}
         />
-        
+      }
       {/* <Success/> */}
     </div>
   );
