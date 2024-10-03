@@ -10,6 +10,7 @@ function App() {
   const [invites, setInvites] = React.useState([])
   const [isLoading, setLoading] = React.useState(true)
   const [searchValue, setSearchValue] = React.useState('')
+  const [success, setSuccess] = React.useState(false)
 React.useEffect(()=>{
   fetch('https://reqres.in/api/users').then(res=>res.json()).then(json=>{
     setUsers(json.data)
