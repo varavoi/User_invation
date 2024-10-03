@@ -39,17 +39,17 @@
 
 
 ### Структура проекта
-``
+```
 ├── src
-│   ├── App.js
-│   ├── components
-│   │   ├── UserList.js
-│   │   ├── UserCard.js
-│   │   └── Confirmation.js
-│   └── App.css
-└── public
-    └── index.html
-``
+   │   ├── App.js
+   │   ├── components
+   │   │   ├── UserList.js
+   │   │   ├── UserCard.js
+   │   │   └── Confirmation.js
+   │   └── App.css
+   └── public
+       └── index.html
+```
 
 ### Дополнительная информация
 
